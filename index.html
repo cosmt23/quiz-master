@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Master</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="quiz-root">
+    <div class="streak-toast" id="streakToast"></div>
+
+    <!-- START SCREEN -->
+    <div class="screen active" id="screen-start">
+      <div class="start-card">
+        <div class="logo-icon">🧠</div>
+        <h1 class="start-title">Quiz Master</h1>
+        <p class="start-sub">ทดสอบความรู้ของคุณ! ตอบให้ถูกต้องและเร็วที่สุด<br>เพื่อสะสมคะแนนสูงสุด</p>
+        <div class="stats-row">
+          <div class="stat-box">
+            <div class="stat-num" id="totalQCount">4</div>
+            <div class="stat-lbl">คำถาม</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">15s</div>
+            <div class="stat-lbl">ต่อข้อ</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">100</div>
+            <div class="stat-lbl">คะแนนสูงสุด/ข้อ</div>
+          </div>
+        </div>
+        <div class="highscore-box" id="highscoreBox" style="display:none">
+          <span class="hs-label">🏆 สถิติสูงสุด</span>
+          <span class="hs-value" id="highscoreVal">0</span>
+        </div>
+        <button class="btn-start" id="startBtn">เริ่มเล่น →</button>
+      </div>
+    </div>
+
+    <!-- QUIZ SCREEN -->
+    <div class="screen" id="screen-quiz">
+      <div class="quiz-header">
+        <span class="q-progress-text" id="qProgress">ข้อ 1 / 4</span>
+        <div class="score-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7F77DD" stroke-width="2.5" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span id="scoreDisplay">0</span>
+        </div>
+        <div class="timer-ring">
+          <svg width="46" height="46" viewBox="0 0 46 46">
+            <circle class="timer-bg" cx="23" cy="23" r="18"/>
+            <circle class="timer-fill" id="timerCircle" cx="23" cy="23" r="18"/>
+          </svg>
+          <div class="timer-text" id="timerText">15</div>
+        </div>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <div class="question-card">
+        <p class="question-text" id="questionText">คำถาม</p>
+      </div>
+
+      <div class="answers-grid" id="answersGrid"></div>
+
+      <div class="next-wrap">
+        <button class="btn-next" id="nextBtn">ต่อไป →</button>
+      </div>
+    </div>
+
+    <!-- RESULT SCREEN -->
+    <div class="screen" id="screen-result">
+      <div class="result-card">
+        <span class="result-emoji" id="resultEmoji">🎉</span>
+        <h2 class="result-title" id="resultTitle">เยี่ยมมาก!</h2>
+        <span class="result-score" id="resultScore">0</span>
+        <p class="result-sub" id="resultSub">คะแนน</p>
+        <div class="result-grid" id="resultGrid"></div>
+        <div class="review-list" id="reviewList"></div>
+        <button class="btn-restart" id="restartBtn">เล่นอีกครั้ง →</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
