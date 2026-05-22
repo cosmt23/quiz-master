@@ -47,7 +47,7 @@ const questions = [
 // ──────────────────────────────
 // ค่าคงที่
 // ──────────────────────────────
-const TIMER_MAX    = 15;         // วินาทีต่อข้อ
+const TIMER_MAX    = 10;         // วินาทีต่อข้อ
 const CIRCUMFERENCE = 2 * Math.PI * 18; // เส้นรอบวง SVG (r=18)
 const LABELS        = ['A', 'B', 'C', 'D'];
 
@@ -228,16 +228,16 @@ function selectAnswer(btn) {
     isCorrect
   });
 
-  if (isCorrect) {
-    // คะแนนโบนัสตามความเร็ว: 50 base + สูงสุด 50 bonus
-    const bonus = 50 + Math.round((timeLeft / TIMER_MAX) * 50);
-    score += bonus;
-    streak++;
-    el.scoreDisplay.textContent = score;
-    if (streak >= 2) showStreak();
-  } else {
-    streak = 0;
-  }
+    if (isCorrect) {
+  score += 1; // ตอบถูกได้ 1 คะแนน
+  streak++;
+
+  el.scoreDisplay.textContent = score;
+
+  if (streak >= 2) showStreak();
+} else {
+  streak = 0;
+}
 
   revealAnswers(btn);
   el.nextBtn.classList.add('show');
