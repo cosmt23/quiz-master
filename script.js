@@ -47,7 +47,7 @@ const questions = [
 // ──────────────────────────────
 // ค่าคงที่
 // ──────────────────────────────
-const TIMER_MAX    = 15;         // วินาทีต่อข้อ
+const TIMER_MAX    = 10;         // วินาทีต่อข้อ
 const CIRCUMFERENCE = 2 * Math.PI * 18; // เส้นรอบวง SVG (r=18)
 const LABELS        = ['A', 'B', 'C', 'D'];
 
