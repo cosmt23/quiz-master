@@ -88,12 +88,12 @@ const questions = [
     ]
   },
   {
-    question: 'ถ้า a=10, b=5 แล้ว (a/b)+3 เท่ากับเท่าไหร่?',
+    question: 'ถ้า a=25, b=5 แล้ว (a/b)+3 เท่ากับเท่าไหร่?',
     answers: [
-      { text: '5', correct: true  },
+      { text: '5', correct: false},
       { text: '6', correct: false },
       { text: '7', correct: false },
-      { text: '8', correct: false }
+      { text: '8', correct: true }
     ]
   },
   
