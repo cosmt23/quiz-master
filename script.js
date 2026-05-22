@@ -34,11 +34,11 @@ const questions = [
     ]
   },
   {
-    question: 'JavaScript รันที่ไหนได้บ้าง?',
+    question: 'JavaScript รันที่ไหนไม่ได้บ้าง?',
     answers: [
-      { text: 'บนเว็บเบราว์เซอร์', correct: true  },
-      { text: 'บนเซิร์ฟเวอร์', correct: true  },
-      { text: 'บนมือถือ', correct: true  },
+      { text: 'บนเว็บเบราว์เซอร์', correct: false  },
+      { text: 'บนเซิร์ฟเวอร์', correct: false  },
+      { text: 'บนมือถือ', correct: false  },
       { text: 'ทุกที่', correct: true  }
     ]
   },
