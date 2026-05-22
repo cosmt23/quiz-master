@@ -229,7 +229,7 @@ function selectAnswer(btn) {
   });
 
     if (isCorrect) {
-  score += 1; // ตอบถูกได้ 1 คะแนน
+  score += 1; // ตอบถูกได้ 1 คะแนน!
   streak++;
 
   el.scoreDisplay.textContent = score;
