@@ -43,24 +43,6 @@ const questions = [
     ]
   },
   {
-    question: 'JavaScript รันที่ไหนไม่ได้บ้าง?',
-    answers: [
-      { text: 'บนเว็บเบราว์เซอร์', correct: false  },
-      { text: 'บนเซิร์ฟเวอร์', correct: false  },
-      { text: 'บนมือถือ', correct: false  },
-      { text: 'ทุกที่', correct: true  }
-    ]
-  },
-  {
-    question: 'คำสั่งใดใช้ในการแสดงข้อความใน JavaScript?',
-    answers: [
-      { text: 'console.log()', correct: true  },
-      { text: 'document.write()', correct: false },
-      { text: 'alert()', correct: false },
-      { text: 'prompt()', correct: false }
-    ]
-  },
-  {
     question: 'คำสั่งใดใช้ในการแสดงข้อความใน JavaScript?',
     answers: [
       { text: 'console.log()', correct: true  },
