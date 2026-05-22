@@ -7,39 +7,48 @@
 // ──────────────────────────────
 const questions = [
   {
-    question: '2 + 2 เท่ากับเท่าไหร่?',
+    question: 'ภาษาโปรแกรมอะไรที่ใช้สร้างเว็บไซต์?',
     answers: [
-      { text: '4',  correct: true  },
-      { text: '22', correct: false },
-      { text: '3',  correct: false },
-      { text: '5',  correct: false }
+      { text: 'Python', correct: false },
+      { text: 'JavaScript', correct: true  },
+      { text: 'C++',       correct: false },
+      { text: 'Java',      correct: false }
     ]
   },
   {
-    question: 'เว็บ Dev YouTube ช่องไหนมีชื่อเสียง?',
+    question: 'HTML ย่อมาจากอะไร?',
     answers: [
-      { text: 'Web Dev Simplified', correct: true  },
-      { text: 'CookingWithJoe',     correct: false },
-      { text: 'TravelVlogs',        correct: false },
-      { text: 'GamingPro',          correct: false }
+      { text: 'HyperText Markup Language', correct: true  },
+      { text: 'HighText Machine Language', correct: false },
+      { text: 'HyperTransfer Markup Language', correct: false },
+      { text: 'HighTransfer Machine Language', correct: false }
     ]
   },
   {
-    question: 'การพัฒนาเว็บสนุกไหม?',
+    question: 'CSS ใช้สำหรับอะไร?',
     answers: [
-      { text: 'สนุกมาก!!!', correct: true  },
-      { text: 'ไม่เลย',    correct: false },
-      { text: 'พอได้',     correct: false },
-      { text: 'ไม่รู้',    correct: false }
+      { text: 'จัดวางองค์ประกอบบนหน้าเว็บ', correct: true  },
+      { text: 'สร้างฟังก์ชันการทำงาน', correct: false },
+      { text: 'เชื่อมต่อกับฐานข้อมูล', correct: false },
+      { text: 'ประมวลผลข้อมูล', correct: false }
     ]
   },
   {
-    question: '4 × 2 เท่ากับเท่าไหร่?',
+    question: 'JavaScript รันที่ไหนได้บ้าง?',
     answers: [
-      { text: '6',  correct: false },
-      { text: '8',  correct: true  },
-      { text: '10', correct: false },
-      { text: '4',  correct: false }
+      { text: 'บนเว็บเบราว์เซอร์', correct: true  },
+      { text: 'บนเซิร์ฟเวอร์', correct: true  },
+      { text: 'บนมือถือ', correct: true  },
+      { text: 'ทุกที่', correct: true  }
+    ]
+  },
+  {
+    question: 'คำสั่งใดใช้ในการแสดงข้อความใน JavaScript?',
+    answers: [
+      { text: 'console.log()', correct: true  },
+      { text: 'document.write()', correct: false },
+      { text: 'alert()', correct: false },
+      { text: 'prompt()', correct: false }
     ]
   }
 ];
@@ -47,7 +56,7 @@ const questions = [
 // ──────────────────────────────
 // ค่าคงที่
 // ──────────────────────────────
-const TIMER_MAX    = 15;         // วินาทีต่อข้อ
+const TIMER_MAX    = 10;         // วินาทีต่อข้อ
 const CIRCUMFERENCE = 2 * Math.PI * 18; // เส้นรอบวง SVG (r=18)
 const LABELS        = ['A', 'B', 'C', 'D'];
 
