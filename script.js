@@ -34,6 +34,15 @@ const questions = [
     ]
   },
   {
+    question: 'คำสั่งใดใช้ในการรับข้อมูลจากผู้ใช้ใน JavaScript?',
+    answers: [
+      { text: 'input()', correct: false },
+      { text: 'prompt()', correct: true  },
+      { text: 'alert()', correct: false },
+      { text: 'confirm()', correct: false }
+    ]
+  },
+  {
     question: 'JavaScript รันที่ไหนไม่ได้บ้าง?',
     answers: [
       { text: 'บนเว็บเบราว์เซอร์', correct: false  },
@@ -50,7 +59,62 @@ const questions = [
       { text: 'alert()', correct: false },
       { text: 'prompt()', correct: false }
     ]
-  }
+  },
+  {
+    question: 'คำสั่งใดใช้ในการแสดงข้อความใน JavaScript?',
+    answers: [
+      { text: 'console.log()', correct: true  },
+      { text: 'document.write()', correct: false },
+      { text: 'alert()', correct: false },
+      { text: 'prompt()', correct: false }
+    ]
+  },
+  {
+    question: 'ตัวแปรใน JavaScript ประกาศด้วยคำสั่งใด?',
+    answers: [
+      { text: 'vare', correct: false  },
+      { text: 'lets', correct: false  },
+      { text: 'const', correct: true  },
+      { text: 'variable', correct: false }
+    ]
+  },
+  {
+    question: 'ฟังก์ชันใน JavaScript ประกาศด้วยคำสั่งใด?',
+    answers: [
+      { text: 'function', correct: true  },
+      { text: 'func', correct: false  },
+      { text: 'def', correct: false  },
+      { text: 'method', correct: false  }
+    ]
+  },
+  {
+    question: '1*3+2*2 เท่ากับเท่าไหร่?',
+    answers: [
+      { text: '7', correct: true  },
+      { text: '8', correct: false },
+      { text: '9', correct: false },
+      { text: '10', correct: false }
+    ]
+  },
+  {
+    question: 'ถ้า x=7, y=3 แล้ว x-(y*2) เท่ากับเท่าไหร่?',
+    answers: [
+      { text: '1', correct: true  },
+      { text: '2', correct: false },
+      { text: '3', correct: false },
+      { text: '4', correct: false }
+    ]
+  },
+  {
+    question: 'ถ้า a=25, b=5 แล้ว (a/b)+3 เท่ากับเท่าไหร่?',
+    answers: [
+      { text: '5', correct: false},
+      { text: '6', correct: false },
+      { text: '7', correct: false },
+      { text: '8', correct: true }
+    ]
+  },
+  
 ];
 
 // ──────────────────────────────
