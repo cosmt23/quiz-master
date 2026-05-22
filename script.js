@@ -40,6 +40,9 @@ const questions = [
       { text: 'prompt()', correct: true  },
       { text: 'alert()', correct: false },
       { text: 'confirm()', correct: false }
+    ]
+  },
+  {
     question: 'JavaScript รันที่ไหนไม่ได้บ้าง?',
     answers: [
       { text: 'บนเว็บเบราว์เซอร์', correct: false  },
