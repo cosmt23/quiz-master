@@ -269,6 +269,11 @@ function showStreak() {
     3: '⚡ 3 ข้อติด! กำลังมาแรง!',
     4: '🌟 4 ข้อติด! เหลือเชื่อ!',
     5: '🚀 5 ข้อติด! ยอดเยี่ยมมาก!',
+    6: '🚀 6 ข้อติด! ว้าว!',
+    7: '🚀 7 ข้อติด! เหลือเชื่อ!',
+    8: '🚀 8 ข้อติด! ทำไปได้!',
+    9: '🚀 9 ข้อติด! มึงใครเนี่ย',
+    9: '🚀 10 ข้อติด! พ่อชื่อไอสไตน์หรอ',
   };
   el.streakToast.textContent = msgs[streak] || `🔥 ${streak} ข้อติด! ไม่หยุดเลย!`;
   el.streakToast.classList.add('show');
@@ -311,6 +316,12 @@ function showResult() {
     { min: 2,   emoji: '😊', title: 'เก่งมาก!' },
     { min: 3,   emoji: '🎉', title: 'ยอดเยี่ยม!' },
     { min: 4,   emoji: '🏆', title: 'สมบูรณ์แบบ!' },
+    { min: 5,   emoji: '😅', title: 'เทพ' },
+    { min: 6,   emoji: '😐', title: 'ลูกพี่โต' },
+    { min: 7,   emoji: '😊', title: 'เก่งมากเอานิ้วไปเลย!' },
+    { min: 8,   emoji: '🎉', title: 'อีกนิด' },
+    { min: 9,   emoji: '🎉', title: 'ใกล้ละ' },
+    { min: 10,   emoji: '🏆', title: 'Ohjesus' },
   ];
   const tier = tiers.filter(t => correct >= t.min).pop();
 
