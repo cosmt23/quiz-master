@@ -229,9 +229,7 @@ function selectAnswer(btn) {
   });
 
   if (isCorrect) {
-    // คะแนนโบนัสตามความเร็ว: 50 base + สูงสุด 50 bonus
-    const bonus = 50 + Math.round((timeLeft / TIMER_MAX) * 50);
-    score += bonus;
+    score += 1;
     streak++;
     el.scoreDisplay.textContent = score;
     if (streak >= 2) showStreak();
